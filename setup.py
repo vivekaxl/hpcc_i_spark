@@ -26,7 +26,7 @@ test_requirements = [
 
 setup(
     name='hpcc_i_spark',
-    version='0.1.0',
+    version='0.1.1',
     description="This package can be used to connect to any hpcc cluster and use the data",
     long_description=readme + '\n\n' + history,
     author="Vivek Nair",
