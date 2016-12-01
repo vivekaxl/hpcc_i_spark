@@ -12,7 +12,7 @@ hpcc_i_spark
 This package can be used to connect to any hpcc cluster and use the data
 
 * Free software: MIT license
-* Documentation: (COMING SOON!) https://hpcc_i_spark.readthedocs.org.
+* Documentation: https://hpcc_i_spark.readthedocs.org.
 
 Features
 --------
