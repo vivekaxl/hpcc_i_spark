@@ -1,6 +1,6 @@
 def find_record_structure(logical_filename, thor_ip):
     import urllib2
-    import json
+    import ujson
     ''' get record structure '''
     records = []
     
@@ -9,15 +9,12 @@ def find_record_structure(logical_filename, thor_ip):
     url += "esp_server=" + str(thor_ip) + "&username=&password=&logical_filename="
     url += logical_filename
     
-    print url
-    print thor_ip
-    
     # Download the content of the page
     response = urllib2.urlopen(url)
     html = response.read()
     
     # Extract the record set from the json downloaded from the url
-    j = json.loads(html)
+    j = ujson.loads(html)
     xml_string = j['getfilelayoutResponse']['Results']['FileLayout']['Row'][-1]
     xml_string = str(xml_string['FileLayout'])
     

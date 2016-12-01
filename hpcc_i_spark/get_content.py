@@ -1,6 +1,6 @@
 def get_content(logical_filename, thor_ip, no_sample):
     import urllib2
-    import json
+    import ujson
     import xmltodict
 
     # Find the record structure of the logical filename
@@ -18,7 +18,7 @@ def get_content(logical_filename, thor_ip, no_sample):
     html = response.read()
     
     # Parsing the response
-    j = json.loads(html)
+    j = ujson.loads(html)
     xml_string = '<root>' + str(j["runprogramResponse"]["Results"]["op_GetWorkunitResult"]["Row"][-1]["Result"]) + '</root>'
 
     o = xmltodict.parse(xml_string)
