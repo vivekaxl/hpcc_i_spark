@@ -42,7 +42,9 @@ Example:
 >>> thor_ip="152.46.17.96"
 >>> record_string = hpcc_i_spark.find_record_structure(logical_filename, thor_ip)
 >>> record_string
-'{STRING field1;STRING field2;STRING field3;STRING field4;STRING field5;STRING field6;STRING field7;STRING field8;STRING field9;}'
+'{STRING field1;STRING field2;STRING field3;STRING field4;
+STRING field5;STRING field6;STRING field7;STRING field8;
+STRING field9;}'
 >>>
 
 * get_content
