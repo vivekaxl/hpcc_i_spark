@@ -13,6 +13,7 @@ Functionality
 **Usage**: find_record_structure(logical_filename, hpcc_cluster_ip)
 
 Find the record structure of a logical filename
+
 **Parameters**:
 
 - logical_filename: Logical filename of the file to be sampled. For e.g. vivek::data::c_ecolids.csv
@@ -34,11 +35,14 @@ STRING field9;}'
 **Usage**: get_content(logical_filename, thor_ip, no_sample)
 Get the sampled content of a particular filename at a particular thor cluster. no_sample indicates how many data points (rows) are sampled from each partition of thor clusters. 
 
-**Usecase**: Assume there is a thor cluster 10.0.2.12 has a logical filename called johndoe.records.csv. 
+**Usecase**:
+
+Assume there is a thor cluster 10.0.2.12 has a logical filename called johndoe.records.csv. 
 If the thor cluster has 40 nodes, then  get_content(logical_filename='johndoe.records.csv', thor_ip="10.0.2.12", no_sample=2)
 will return 80 records (2 * 40).
 
 **Parameters**:
+
 - logical_filename: Logical filename of the file to be sampled. For e.g. vivek::data::c_ecolids.csv
 - thor_ip: IP address of THOR
 - no_sample: Number of samples/cluster. Refer to the usecase for more information
