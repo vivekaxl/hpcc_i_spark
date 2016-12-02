@@ -62,14 +62,13 @@ Parameters:
 - no_sample: Number of samples/cluster. Refer to the usecase for more information
 
 Example:
-``
+
 >>> import hpcc_i_spark
 >>> logical_filename='vivek::data::c_ecolids.csv'
 >>> thor_ip="152.46.17.96"
 >>> no_sample=2
 >>> content = hpcc_i_spark.get_content(logical_filename, thor_ip, no_sample)
 >>> content
-
 [[u'1', u'0.49', u'0.29', u'0.48', u'0.5', u'0.56', u'0.24', u'0.35', u'0'], [u'10', u'0.42', u'0.4', u'0.48', u'0.5', u'0.56', u'0.18', u'0.3', u'0'], [u'169', u'0.63', u'0.5', u'0.48', u'0.5', u'0.59', u'0.85', u'0.86', u'1'], [u'170', u'0.49', u'0.42', u'0.48', u'0.5', u'0.53', u'0.79', u'0.81', u'1']]
-``
+>>>
 
