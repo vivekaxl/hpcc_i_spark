@@ -35,7 +35,9 @@ Find the record structure of a logical filename
 Parameters:
 - logical_filename: Logical filename of the file to be sampled. For e.g. vivek::data::c_ecolids.csv
 - hpcc_cluster_ip: IP address of THOR
+
 Example:
+
 >>> logical_filename='vivek::data::c_ecolids.csv'
 >>> thor_ip="152.46.17.96"
 >>> record_string = hpcc_i_spark.find_record_structure(logical_filename, thor_ip)
