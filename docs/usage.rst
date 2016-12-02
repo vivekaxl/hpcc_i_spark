@@ -33,6 +33,7 @@ STRING field9;}'
 * get_content
 
 **Usage**: get_content(logical_filename, thor_ip, no_sample)
+
 Get the sampled content of a particular filename at a particular thor cluster. no_sample indicates how many data points (rows) are sampled from each partition of thor clusters. 
 
 **Usecase**:
